@@ -96,22 +96,27 @@
                 <div><br><input type="text" style="width: 500px; height: 60px; font-size: 2em;" required></div><br>
                 <div id="text6" style="display: none; color: red;">필수 정보입니다</div>
                 <div id="text7" style="display: none; color: red;">인증이 필요합니다</div>
-                <input type="button" value="가입하기" style="width: 500px; height: 50px">                
+                <input type="button" value="가입하기" onclick="checkVal(form)" style="width: 500px; height: 50px">                
             </form>
         </main>
         <nav></nav>
         <aside></aside>
     </div>
-    <%-- 
+    
     <script>
+    
+    
+    
+    
+    <%-- 
     mouse();
     function mouse(){
     $(".input").mouseover(function (e) {
                 $(this).css('cursor', 'pointer')
             });
     }
-    </script>
     --%>
+    </script>
 </body>
 
 </html>
