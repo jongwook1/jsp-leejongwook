@@ -116,21 +116,17 @@
         // }       
 
         function checkVal(form) {
-
             let cnt = 0;
             for (let i = 0; i < form.check0.length; i++) {
                 if (form.check0[i].checked === true)
                     cnt++;
             }
-
             if (cnt > 1)
                 form.submit();  // 홀드하고 있었던 서밋동작을 실행
             else {
-
                 document.getElementById("text").style.display = "block";
             }
         }
-
 
     </script>
 

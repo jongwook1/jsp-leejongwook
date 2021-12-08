@@ -54,25 +54,25 @@
         </header>
         <main>
             <form action="http://localhost:8082/webEx/_2_joinProMy.jsp">
-                <div>아아디</div>
-                <input type="text" name="id" style="width: 500px; height: 60px;">
+                <div>아이디</div>
+                <input type="text" name="id" style="width: 500px; height: 60px; font-size: 2em;" required>
                 <div id="text0" style="display: none; color: red;">필수 정보입니다</div>
                 <div><br> 비밀번호</div>
-                <input type="text" name="pw" style="width: 500px; height: 60px;">
+                <input type="password" name="pw1" style="width: 500px; height: 60px; font-size: 2em;" required>
                 <div id="text1" style="display: none; color: red;">필수 정보입니다</div>
                 <div><br> 비밀번호 재확인</div>
-                <input type="text" name="pw" style="width: 500px; height: 60px;">
+                <input type="password" name="pw2" style="width: 500px; height: 60px; font-size: 2em;" required>
                 <div id="text2" style="display: none; color: red;">필수 정보입니다</div>
                 <div><br>이름</div>
-                <input type="text" name="name" style="width: 500px; height: 60px;">
+                <input type="text" name="name" style="width: 500px; height: 60px; font-size: 2em;" required>
                 <div id="text3" style="display: none; color: red;">필수 정보입니다</div>
                 <div><br> 생년월일</div>
-                <input type="text" name="year" style="width: 160px; height: 60px;">
+                <input type="text" name="year" style="width: 160px; height: 60px; font-size: 2em;">
                 <div id="text4" style="display: none; color: red;">태어난 년도 4자리를 정확하게 입력하세요</div>
-                <input type="text" name="month" style="width: 160px; height: 60px;">
-                <input type="text" name="day" style="width: 160px; height: 60px;">
+                <input type="text" name="month" style="width: 160px; height: 60px; font-size: 2em;">
+                <input type="text" name="day" style="width: 160px; height: 60px; font-size: 2em;">
                 <div><br> 성별</div>
-                <select name="" id="" style="width: 500px; height: 60px;">
+                <select name="" id="" style="width: 500px; height: 60px; font-size: 2em;" required>
                     <option value="o1">성별</option>
                     <option value="o1">남자</option>
                     <option value="o1">여자</option>
@@ -80,10 +80,10 @@
                 </select>
                 <div id="text5" style="display: none; color: red;">필수 정보입니다</div>
                 <div><br> 본인 확인 이메일</div>
-                <input type="text" name="email" style="width: 500px; height: 60px;"><br>
+                <input type="text" name="email" style="width: 500px; height: 60px; font-size: 2em;"><br>
                 <p><br> 휴대전화</p>
                 <div>
-                    <select name="" id="" style="width: 500px; height: 60px;">
+                    <select name="" id="" style="width: 500px; height: 60px; font-size: 2em;">
                         <option value="o1">대한민국+82</option>
                         <option value="o1">벨기에+32</option>
                         <option value="o1">프랑스+33</option>
@@ -91,9 +91,9 @@
                     </select>
                 </div>
                 <br>
-                <input type="text" name="phonNumber" style="width: 350px; height: 60px;">
-                <input type="button" value="인증번호 받기" style="width: 150px; height: 60px">
-                <div><br><input type="text" style="width: 500px; height: 60px;"></div><br>
+                <input type="text" name="phonNumber" style="width: 350px; height: 60px; font-size: 2em;" required>
+                <input type="button" value="인증번호 받기" style="width: 150px; height: 60px;">
+                <div><br><input type="text" style="width: 500px; height: 60px; font-size: 2em;" required></div><br>
                 <div id="text6" style="display: none; color: red;">필수 정보입니다</div>
                 <div id="text7" style="display: none; color: red;">인증이 필요합니다</div>
                 <input type="button" value="가입하기" style="width: 500px; height: 50px">                
