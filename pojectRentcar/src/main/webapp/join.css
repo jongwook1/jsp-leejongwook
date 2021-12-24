@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.warp {
+	display: grid;
+	height: 150vh;
+	/* width:vh */
+	grid-template: "nav header aside" 0.2fr "nav main aside" 1fr
+		"nav main aside" 1fr/0.8fr 1fr 0.8fr;
+}
+
+header {
+	grid-area: header;
+	font-size: 2em;
+	/* background-color: rosybrown; */
+}
+
+main {
+	grid-area: main;
+	/* background-color: royalblue; */
+}
+
+nav {
+	grid-area: nav;
+	/* background-color: slateblue; */
+}
+
+aside {
+	grid-area: aside;
+	/* background-color: slategray; */
+}

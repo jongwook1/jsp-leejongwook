@@ -1,0 +1,243 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+}
+hr{
+    border:solid 3px black; 
+}
+
+.wrap{
+    display: grid;
+
+    height: 200vh;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 150px auto 200px;
+    grid-template-areas: 
+    "header header header header header header"
+    
+    "main main main main main aside"
+    "footer footer footer footer footer footer"
+    ;
+}
+
+
+header{
+    grid-area: header;
+    /* background-color: cornflowerblue; */
+    font-size: 4em;
+    text-align: center;
+    /* background-color: chartreuse; */
+}
+
+nav{
+    grid-area: nav;
+    /* background-color: crimson; */
+    /* background-color: blue; */
+
+    
+}
+
+main{
+    grid-area: main;
+    /* background-color: darkgreen; */
+
+    display: grid;
+
+    grid-template-rows: 0.5fr 1.7fr 1.0fr ;
+    grid-template-columns: 1fr 1fr  250px;
+    grid-template-areas: 
+    "sec2 sec2 sec2 " 
+    "sec1 sec1 sec1 " 
+    "sec3 sec3 sec3 "    
+    ;
+
+    /* grid-template: 
+    "sec1 sec1 sec1 sec4" 1fr
+    "sec2 sec2 sec2 sec4" 1fr
+    "sec3 sec3 sec3 sec4" 1fr
+    / repeat(4, 1fr) 250px 
+    ; */
+}
+
+aside{
+    grid-area: aside;
+    /* background-color: yellow; */
+}
+
+footer{
+    grid-area: footer;
+   /* background-color: violet;*/ 
+
+    display: flex;
+    
+    align-items: center;
+}
+
+.sec1{
+    grid-area: sec1;
+    display: grid;
+	text-align: center;
+    /* background-color: darkgray; */
+
+    /* grid-template:  */
+    /* "arti1" 1fr 
+    "arti2" 1fr / auto; */
+}
+
+#arti1{
+    grid-area: arti1;
+    /* background-color:salmon; */
+    
+}
+
+/* #arti2{
+    grid-area: arti2;
+    background-color: red;
+} */
+
+.sec2{
+    grid-area: sec2;
+    /* background-color:darkcyan; */
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+
+.sec3{
+    grid-area: sec3;
+    text-align: center;
+    /* background-color: blue; */
+}
+
+/* .sec4{
+    grid-area: sec4;
+    background-color: cadetblue;
+} */
+
+#arti1Title{
+    font-size: 3em;
+    text-align: center;
+}
+
+#choiceDate{
+    font-size: 2em;
+    text-align: center;
+}
+
+#choiceSopt{
+    font-size: 2em;
+    text-align: center;
+}
+
+#choiceCarKinds{
+    font-size: 2em;
+    text-align: center;
+}
+
+#carTable{
+    text-align: center; 
+    margin: auto;   
+}
+
+#sec2-0text{
+    font-size: 2em;
+    text-align: center;
+
+}
+
+#sec2-1text{ 
+    /* flex-direction: column;
+        align-items: center; */
+      float: left;
+      margin-left: 200px;
+      margin-right: 70px;
+      width:  200px;
+      height: 100px;
+      border: solid 2px;
+      font-size: 2em;
+      text-align: center;
+  }
+
+  #sec2-2text{ 
+    /* flex-direction: column;
+        align-items: center; */
+      float: left;
+      margin-right: 70px;
+      width:  200px;
+      height: 100px;
+      border: solid 2px;
+      font-size: 2em;
+      
+  }
+
+  #sec2-3text{ 
+      
+    /* flex-direction: column;
+        align-items: center; */
+      float: left;
+      margin-right: 70px;
+      width:  200px;
+      height: 100px;
+      border: solid 2px;
+      font-size: 2em;
+      
+  }
+
+  #sec2-4text{ 
+    /* flex-direction: column;
+        align-items: center; */
+      float: left;
+      margin-right: 70px;
+      width:  200px;
+      height: 100px;
+      border: solid 2px;
+      font-size: 2em;      
+  }
+
+  #sec2-5text{
+      font-size: 3em;
+      text-align: center;
+  }
+
+  #name{
+      font-size: 2em;
+      text-align: center;
+  }
+
+  #birthday{
+      font-size: 2em;
+      text-align: center;
+  }
+
+  #phonNumber{
+      font-size: 2em;
+      text-align: center;
+  }
+
+  #drLicense{
+      font-size: 2em;
+      text-align: center;
+  }
+
+  #info{
+      font-size: 2em;
+  }
+
+  #nextbtn{
+    font-size: 3em;
+    margin: auto;
+  }
+  
+  #choice{
+  	width: 200px;
+    height: 60px;
+    color:darkslategray;
+    font-size: 1em;
+    border-radius: 30px;
+    text-align: center;
+  }
+
+ 
