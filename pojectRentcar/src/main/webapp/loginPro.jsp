@@ -23,7 +23,7 @@
 	<%	
 	}
 	else{
-		response.sendRedirect("_5_login.jsp");
+		response.sendRedirect("login.jsp");
 	}
 	%>
 </body>

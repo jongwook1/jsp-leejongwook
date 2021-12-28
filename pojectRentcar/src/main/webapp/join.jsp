@@ -216,7 +216,7 @@
     	if (!checknull(form.birth.value)) {
     		alert("생년월일이 공백입니다")
     		const form = document.info;
-    		form.birth.value = "";      //input태그 name이 name 인곳 공백만듬
+    		form.birth.value = "";      //input태그 birth이 brith 인곳 공백만듬
     		form.birth.focus(); 
     		return false;
     	}
@@ -228,7 +228,7 @@
     	if (!checknull(form.email.value)) {
     		alert("메일이 공백입니다")
     		const form = document.info;
-    		form.email.value = "";      //input태그 name이 name 인곳 공백만듬
+    		form.email.value = "";      //input태그 email이 email 인곳 공백만듬
     		form.email.focus(); 
     		return false;
     	}
