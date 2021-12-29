@@ -1,3 +1,5 @@
+<%@page import="carInfo.CarInfoDAO"%>
+<%@page import="carInfo.CarInfoDTO"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="userChoice.UserChoiceDTO"%>
 <%@page import="userChoice.UserChoiceDAO"%>
@@ -51,8 +53,13 @@
 	
 	UserChoiceDTO userChoose = new UserChoiceDTO(no, id, startDate, endDate, choiceSopt, carChoice, carClass, carName,
 			carPrice, name, birth, phoneN, drLicense, dayCount, totalPrice);
-	
+		
 	dao.addUserChoose(userChoose);
+	
+	
+	CarInfoDTO reserveCar= new CarInfoDTO(startDate, endDate, carName);
+	CarInfoDAO cDao = CarInfoDAO.getInstance();
+	cDao.updateCarInfo(reserveCar);
 	
 	response.sendRedirect("main.jsp");
 %>

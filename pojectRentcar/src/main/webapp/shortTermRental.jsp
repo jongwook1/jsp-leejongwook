@@ -1,3 +1,4 @@
+<%@page import="carInfo.CarInfoDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -46,36 +47,13 @@
 					<div id="choiceCarKinds">
 						차량 선택
 						<hr>
-					</div>
+					</div>						
+						<% CarInfoDAO dao = CarInfoDAO.getInstance();%>
 					<select name="carChoice" id="" style="height: 4em">
-						<option value="경차/레이/35000">경차/레이/35000</option>
-						<option value="경차/스파크/34000">경차/스파크/34000</option>
-						<option value="경차/모닝/33000">경차/모닝/33000</option>
-						<option value="경차/캐스퍼/37000">경차/캐스퍼/37000</option>
-						<option value="소형/k3/39000">소형/k3/39000</option>
-						<option value="소형/아반떼AD/39000">소형/아반떼AD/39000</option>
-						<option value="소형/엑센트/33000">소형/엑센트/33000</option>
-						<option value="소형/SM3/35000">소형/SM3/35000</option>
-						<option value="소형/아이오닉/35000">소형/아이오닉/35000</option>
-						<option value="소형/올뉴아반떼/34000">소형/올뉴아반떼/34000</option>
-						<option value="중형/K5 1.6/40000">중형/K5 1.6/40000</option>
-						<option value="중형/K5 2.0/41000">중형/K5 2.0/41000</option>
-						<option value="중형/SM6 2.0/42000">중형/SM6 2.0/42000</option>
-						<option value="중형/소나타 뉴라이즈 2.0/42000">중형/소나타 뉴라이즈
-							2.0/42000</option>
-						<option value="중형/소나타 스마트스트림 2.0/40000">중형/소나타 스마트스트림
-							2.0/40000</option>
-						<option value="대형/EQ9/50000">대형/EQ9/50000</option>
-						<option value="대형/GENESIS G80 3.3/51000">대형/GENESIS G80
-							3.3/51000</option>
-						<option value="대형/K9 3.8/50000">대형/K9 3.8/50000</option>
-						<option value="대형/GENESIS GV70 2.5/52000">대형/GENESIS GV70
-							2.5/52000</option>
-						<option value="SUV/KONA 1.6/47000">SUV/KONA 1.6/47000</option>
-						<option value="SUV/QM6 2.0/46000">SUV/QM6 2.0/46000</option>
-						<option value="SUV/스포티지 1.7/45000">SUV/스포티지 1.7/45000</option>
-						<option value="SUV/쏘렌토 2.2/44500">SUV/쏘렌토 2.2/44500</option>
-						<option value="SUV/티볼리 1.6/40000">SUV/티볼리 1.6/4000</option>
+						<%for(int i=0; i<dao.getCarInfos().size(); i++){ %>
+						<option value=<%= dao.getCarInfos().get(i).getCarClass() + "/" + dao.getCarInfos().get(i).getCarName() + "/" + dao.getCarInfos().get(i).getCarPrice() %>><%=dao.getCarInfos().get(i).getCarClass() + "/" + dao.getCarInfos().get(i).getCarName() + "/" + dao.getCarInfos().get(i).getCarPrice() %></option>
+						<%} %>
+						
 					</select><br> <br>
 					<div id=sec2-5text>계약자 정보입력(제1운전자)</div>
 					<hr>
